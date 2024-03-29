@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title "about us |  " ~ parent() %}
+
+{% block body%}
+
+	<img src="/img/Photo_Lyon.jpg" alt="carte de lyon" width='45%'>
+	<h1>
+		Built with
+		<span class="text-pink-600">&hearts;</span>
+		by ella midjiyawa
+	</h1>
+
+	<p>
+		<a href="{{ path('app_home')}}">Revenir a la page d'accueil</a>
+	</p>
+{% endblock %}

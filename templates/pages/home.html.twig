@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Hello city !
+{% endblock %}
+
+{% block body%}
+	<img src="img/Lyon.png" alt="photo de lyon" width='400' heigh="370" class="h-99 rounded shadow-md">
+	<h1 class="mt-5 text-5xl sm:text-5xl font-semibold text-indigo-600 ">
+		Hello from lyon
+	</h1>
+
+	<p class="text-lg text-gray-800">
+		it's currently
+		{{'now'| date ('h:i A','Europe/Paris')}}
+		.
+	</p>
+
+{% endblock %}
